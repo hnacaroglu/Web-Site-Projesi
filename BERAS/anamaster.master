@@ -1,0 +1,188 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="anamaster.master.cs" Inherits="anamaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="beras.css" />
+    <link rel="shortcut icon" href="images/fav.ico" />
+<title>BERAS MÜHENDİSLİK</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" href="ism/css/my-slider.css"/>
+<script src="ism/js/ism-2.2.min.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div>
+<div class="uyegiris">
+<div class="ust-iletisim" >
+    
+    <img width="25" height="25" style=" margin:6px 3px -10px -10px;" src="images/headset.png" />&nbsp;&nbsp; <span style="line-height:10px">Canlı Destek <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0850 444 0 444</span>
+</div>
+<div class="bilgigiris">
+    <asp:Panel ID="misafirpanel" runat="server" >
+
+    <asp:Label ID="Label1" runat="server" Text="Kullanıcı Adı: " CssClass="uye-font"></asp:Label><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox> &nbsp;
+    <asp:Label ID="Label2"  runat="server" Text="Parola:  " CssClass="uye-font"></asp:Label><asp:TextBox ID="TextBox2" runat="server" TextMode="Password" CssClass="parola-text"></asp:TextBox>&nbsp;
+    <asp:Button ID="Button1" runat="server" Text="GİRİŞ"  CssClass="uye-font" OnClick="Button1_Click"/>&nbsp;<asp:Button ID="Button2" runat="server" Text="ÜYE OL" OnClick="Button2_Click"  />
+</asp:Panel>
+
+    <asp:Panel ID="uyepanel" runat="server" Visible="false">
+
+        <ul class="uyelik"> 
+            <li><a href="#"><img width="25" height="25" style="margin-top:5px; margin-right:-5px "  src="images/cikis.png" /><asp:Button ID="Button4" runat="server" Text="Çıkış" CssClass="uyelik-button" OnClick="Button4_Click" /></a></li>
+            <li><a href="sepetim.aspx">
+                <img width="25" height="25" style="margin-top:5px; " src="images/sepetim.png" /> Sepetim</a></li>
+            <li><a href="#">
+                <img width="25" height="25" style="margin-top:5px;" src="images/istek-list.png" /> İstek Listesi</a></li>
+            <li>
+                 <a href="hesabim.aspx"><img width="25" height="25"  style="margin-top:5px;" src="images/uye.png" /> Hesabım</a></li>
+             
+            
+
+        </ul>
+        
+
+    </asp:Panel>
+
+
+
+</div>
+</div>
+<header class="header">
+<figure class="logo">
+    <img src="images/ana-logo.PNG" /></figure>
+ 
+    
+      <a href="sepetim.aspx">
+          <div class="sepet">
+        <div class="sepet-adet"> 5 </div>
+        <span class="sepet-span"> Sepet - <span style="color:#0e779d; font-weight:bold;"> 100 </span> TL </span> <img class="sepet-img" src="images/sepet-icon.png" />
+     </div>
+      </a> 
+
+   
+
+
+
+<nav class="navmenu">
+<div class="menuyazisi">
+<ul>
+<li><a class="active-a" href="Default.aspx">Anasayfa</a></li>
+<li><a class="active-u" href="urunlerimiz.aspx">Ürünlerimiz</a>
+    <ul>
+        <li><a  href="urunlerimiz.aspx">Telefon</a></li>
+        <li><a  href="urunlerimiz.aspx">Bilgisayar</a></li>
+
+    </ul>
+
+</li>
+<li><a class="active-h" href="hakkimizda.aspx">Hakkımızda</a></li>
+<li><a class="active-i" href="iletisim.aspx">İletişim</a></li>
+
+</ul>
+
+</div>
+</nav>
+
+</header>
+
+         
+
+<div hidden class="sss">S.S.S</div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+         </asp:ContentPlaceHolder>
+
+
+     
+
+
+
+<footer class="footer">
+
+<!--Footer içerisindeki kısımlar buradan başlıyor.-->
+
+<div id="footer-ana">
+
+<div id="sosyal-medya">
+
+
+
+<a id="in" href="#">
+<img id="sosyal-img-div" src="images/in-icon-white.png" />
+</a>
+
+<a id="facebook" href="#">
+<img id="sosyal-img-div" src="images/facebook-icon-white.png" />
+</a>
+
+<a id="twitter" href="#">
+<img id="sosyal-img-div" src="images/twitter-icon-white.png" />
+</a>
+
+<a id="google" href="#">
+<img id="sosyal-img-div" src="images/google-icon-white.png" />
+</a>
+
+
+</div>
+
+<div id="footer-sol">
+<p><span id="footer-baslik">İletişim</span></p>
+<p><span id="footer-tel"><span style="color:#CDE2E4; font-size:19px">Telefon : </span>0212 444 0 444</span> </p>
+
+<p><span id="footer-tel"><span style="color:#CDE2E4; font-size:19px">&nbsp;&nbsp;E-Mail : </span>info@beras.com</span> </p>
+<p><span id="footer-tel"><span style="color:#CDE2E4; font-size:19px">&nbsp;&nbsp;&nbsp;Adres : </span>Rasimpaşa Mah. Karakolhane Cad. No:60   
+<br />Kadıköy/İstanbul</span> </p>
+</div>
+
+<div id="footer-orta">
+<p><span id="footer-baslik">Hızlı Menü</span></p>
+<p><a href="#" class="hizlimenu">Anasayfa</a></p>
+<p><a href="#" class="hizlimenu">Ürünlerimiz</a></p>
+<p><a href="#" class="hizlimenu">Hakkımızda</a></p>
+<p><a href="#" class="hizlimenu">İletişim</a></p>
+
+</div>
+
+<div id="footer-sag">
+<p><span id="footer-baslik">Haberdar Ol!</span></p>
+
+<p id="footer-tel"> Yeni ürün ve kampanyaları<br /> takip etmek  için mail<br /> adresini şimdi yaz! </p><br />
+<p>
+  <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox> &nbsp; <asp:Button ID="Button3" runat="server" Text="Gönder" /></p>
+
+</div>
+
+</div>
+
+
+<!--Footer içerisindeki kısımlar burada bitiyor.-->
+</footer>
+<div id="footer-copyright">
+
+<span id="copyright">Copyright © 2017 Tüm Hakları Saklıdır.</span>
+</div>
+</div>
+
+<!--Bu alan ust menuyu sabitlemek icin olusturulmustur.-->
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 210) {
+                    $('.navmenu').addClass('fix');
+                } else {
+                    $('.navmenu').removeClass('fix');
+                }
+            });
+        });</script>
+
+
+       
+   
+    </form>
+</body>
+</html>

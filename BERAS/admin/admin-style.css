@@ -1,0 +1,107 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/***** RESET *****/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/*font-size: 100%;
+	vertical-align: baseline;*/
+	
+}
+html, body {height:100%;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;} /
+textarea {overflow:auto;}
+
+/***** RESET *****/
+
+
+body{
+	background-image:url(../images/sade-arka-plan-14.jpg);
+	 background-attachment: fixed;}
+
+.a-navmenu-tam {
+    width:200px;
+    height:768px;
+    background-color:#2f90b3;
+    box-shadow:0 2px 2px #2f80b3;
+    position:fixed
+    
+
+}
+
+.a-menu {
+    width:180px;
+    height:300px;   
+    margin:20px auto;
+    text-align:center;
+    position:relative;
+    font: bold 24px 'Trebuchet MS', Arial, Helvetica, sans-serif;
+   	color:#2f90b3;
+       
+
+}
+
+
+.anasyfa-icon{
+    width:50px; 
+    height:50px;
+    margin:0 auto; 
+    border-radius:50px;
+    margin-bottom:0
+}
+
+
+
+.a-menu ul li{
+   
+    position:relative;
+   
+    
+}
+
+.a-menu ul li a {
+    display:block;
+    width:177px;
+    height:60px;
+    background-color:#fff;
+    text-decoration:none;
+   	color:#2f90b3;
+    line-height:60px;
+    border:1px solid #2f90b3;
+    
+    }
+
+.menu-resim{
+    width:40px;
+    height:40px;
+    margin-top:10px;
+    margin-left:10px;
+    float:left;
+    
+    
+}
+
+   .a-menu ul li a:hover {
+        color: #FFF;
+        background: #5dccf5;
+    }
+
+
+.a-menu ul li ul{
+    display:none; 
+    position:absolute;
+     left:178px;
+    top:0
+
+}
+
+.a-menu ul li:hover ul{
+    display:block;
+}

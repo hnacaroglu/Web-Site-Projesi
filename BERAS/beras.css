@@ -1,0 +1,1447 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/***** RESET *****/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/*font-size: 100%;
+	vertical-align: baseline;*/
+	
+}
+html, body {height:100%;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;} /
+textarea {overflow:auto;}
+
+/***** RESET *****/
+
+
+body{
+	background-image:url(images/sade-arka-plan-14.jpg);
+	 background-attachment: fixed;
+     background-repeat:initial;
+}
+
+input[type=text]{
+    width:120px;
+    height:30px;
+    margin:2px auto;
+    font: 18px; 
+    border-radius:5px
+}	
+
+.parola-text{
+        width:120px;
+    height:30px;
+    margin:2px auto;
+    font: 18px; 
+    border-radius:5px
+}
+
+/*İletişim formundaki tablo css kodları burada........................*/
+
+.iletisim-tablo{
+    width:500px; 
+    height:50px; 
+    margin-left:20px; 
+    margin-top:20px;
+}
+
+
+
+    .iletisim-tablo   { 
+        font:bold 19px Arial, Helvetica, sans-serif; 
+        color:#2f90b3; 
+        margin-top:5px;
+    }
+
+
+input[type=submit]{
+    width:60px;
+    height:36px;
+    margin:0 auto;
+    font: 14px tahoma;
+    border:1px solid #4F90B3;
+    border-radius:3px ;
+    font-weight:500;
+    background-color:#9cdbe0;
+    color:#fff;
+  
+
+}
+
+.new-buton input[type=submit]{
+    width:70px;
+    background-color:#2f90b3;
+    font: 16px tahoma;
+    box-shadow:0 2px 2px #0E61A5
+}
+
+input[type=submit]:hover{
+  background-color:#7BD2D9;
+  color:#fff;
+}
+
+.form input[type=text] {
+    width:300px;
+    height:30px;
+    margin:2px auto;
+    font: 18px; 
+    border-radius:5px;
+    font:16px;
+    box-shadow:2px 3px 3px #0E61A5
+}
+
+.header{
+	width:%100;
+	height:100px;    
+    padding:140px 0 0 0}
+
+.uyegiris{
+	width:%100;
+    height:40px; 
+    background-image:url(images/cyan-wallpaper-4%20.jpg);
+	 box-shadow:0 3px 2px #2F90B3;
+		}
+
+.ust-iletisim{
+	width:140px; 
+	height:40px;
+	background-color:rgba(248, 245, 245,0.9);
+	margin-left:50px;
+    margin-top:2px;
+	float:left;
+    border-radius:5px;   
+    text-align:center;
+     font:bold 12px Arial, Helvetica, sans-serif; 
+     color:#127b98;
+}	
+
+.logo{
+	
+   
+	margin-top:-130px;
+	}
+
+.bilgigiris{
+	width:560px; 
+	height:40px; 
+	margin-right:100px;
+	float:right;
+	}
+
+
+.sepet{
+    width:196px;
+    height:50px;
+    border:2px solid #2f90b3;
+    float:right;
+    margin:-100px 60px 20px 0;
+    box-shadow:0 2px 2px #2f90b3;
+
+}
+
+.sepet:hover {
+    background-color:#d3ebf5;
+    border:2px solid #2f90b3;
+    color:#fff;
+}
+
+.sepet-img{
+    width:34px; 
+    height:34px;
+    margin-left:7px; 
+    margin-bottom:-10px
+}
+
+.sepet-adet{
+    width:25px;
+    height:25px;
+    text-align:center;
+    line-height:25px;
+    border-radius:25px;
+    background-color:#2f90b3;
+    color:#fff;
+    float:right;
+    margin-top:-10px;
+    margin-right:-10px;
+    font-weight:bold;
+    box-shadow:1px 1px 1px #2f90b3;
+}
+
+.sepet-adet:hover {
+        color: #2f90b3;
+        background-color:#fff;
+        border:1px solid #2f90b3;
+    }
+
+.sepet-span{
+    font:bold 18px Arial, Helvetica, sans-serif; 
+    line-height:50px;
+    margin-left:10px;
+    color:#37a1c7
+}
+/*Menü başlangıç alanı...........................................*/
+
+.fix{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    margin:0;
+}
+
+.navmenu{
+	width:%100; 
+	height:60px;
+	background-image:url(images/cyan-wallpaper-4.jpg);
+	 line-height:60px;
+	 box-shadow:0 4px 3px #2F90B3;
+	 z-index:999;
+	 }
+	 
+.menuyazisi{
+	height:60px; 
+	font:bolder 20px 'Trebuchet MS', Arial, Helvetica, sans-serif; 
+	float:left; 
+	margin:0 0 0 200px;
+	color:#2F90B3} 
+	
+.menurenk{
+	color:#2F90B3;
+	letter-spacing:1px}	
+
+.navmenu ul li{
+	float:left;  
+	position:relative}
+
+.navmenu ul li a{
+	display:block; 
+	width:140px; height:60px;
+    background:#F9F9F9;
+    text-decoration:none;
+    border-right:1px solid #2F90B3;
+    color:#2F90B3;
+	 text-align:center; 
+    line-height:60px;}
+
+.navmenu ul li a:hover{
+	color:#FFF; 
+	background:#2F90B3}
+
+.navmenu ul li ul{
+     display:none; 
+     position:absolute; 
+     left:0; 
+     top:60px;
+     box-shadow:0 4px 3px #2F90B3;
+}
+.navmenu ul li ul li{
+    border-bottom:1px solid #2f90b3;
+    box-shadow:0 4px 3px #2F90B3;
+}
+
+.navmenu ul li:hover ul {
+        display: block;
+        z-index:100;
+    }
+
+.sss{
+    width:100px; 
+    height:38px; 
+    background-color:#2f90b3; 
+    border-radius:15px; 
+    float:left; 
+    position:fixed; 
+    top:350px; 
+    box-shadow:0 3px 3px #2f90b3; 
+    transform:rotate(270deg); 
+    color:rgba(243, 238, 238,0.75); 
+    left:-27px; text-align:center; 
+    padding-top:8px;     
+    font:bold 24px 'Trebuchet MS', Arial, Helvetica, sans-serif;
+
+    }
+/*Üyelik paneli içindeki kısımlar buradan başlıyor*********************/
+
+.uye-font{
+     font:bold 16px 'Trebuchet MS', Arial, Helvetica, sans-serif;
+     color:#fff;
+}
+
+.uyelik li{
+    font:bold 16px 'Trebuchet MS', Arial, Helvetica, sans-serif;
+   
+    float:right;
+    
+}	
+
+.uyelik li a{
+    text-decoration:none;
+    margin-left:20px;
+    line-height:40px;
+     color:#fff;
+     
+}
+
+.uyelik li a:hover{
+    color:#5BD2D9}
+
+.uyelik input[type=submit]{
+    background-color:transparent; 
+    border:none;  font:bold 16px 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.uyelik li input[type=submit]:hover{    
+    color:#5BD2D9}
+
+/*Üyelik paneli içindeki kısımlar burada bitiyor*********************/
+
+/*Menü bitiş alanı...........................................*/
+	 
+	 
+.sliderana{
+	width:%100;
+    height:480px; }
+
+.slideralan{
+	width:1000px; 
+	margin:35px auto; 
+	box-shadow:0 3px 2px #2F90B3}	 
+	 
+.urunlistepage{
+	width:%100; 
+	min-height:980px;
+
+    
+	
+	
+	}
+
+.urunlistepageauto {
+    width:%100; 
+	min-height:1420px;
+}
+
+
+	
+.anasayfalama{
+	width:300px;
+	height:50px;
+	margin:30px auto;
+	text-align:center;
+    	
+	}	
+	
+	
+.sayfalamakutu{
+	display:block;
+	width:30px;
+	height:30px;
+	background-image:url(images/cyan-wallpaper-4%20.jpg);
+	color:#FFF;
+	border:1px solid #09F;
+	border-radius:7px;
+	float:left;
+	line-height:30px;
+	margin-left:5px;
+	margin-top:75px;
+	font-weight:400;
+	box-shadow:1px 3px 3px #4F90B3;	}
+	
+.sayfalamakutu:hover{
+	color:#2F90B3;
+	background-image:none;
+	transition:0.3s}	
+
+
+
+	
+#urunbosluk{
+	width:%100;
+	height:80px;
+	background-image:url(images/cyan-wallpaper-4%20.jpg);
+	box-shadow:1px 3px 3px #4F90B3;}
+	
+#urunustbosluk{
+	width:%100;
+	height:80px;	
+}	
+	
+#urunlertextdiv{
+	width:%100;
+	height:120px;
+	background-image:url(images/cyan-wallpaper-4%20.jpg);
+	text-align:center;
+	line-height:120px;
+	 box-shadow:0 4px 3px #4F90B3;
+	 z-index:12
+	}
+
+#urun-resim{
+	display:block;
+	width:220px;
+	height:240px;
+	background-color:#fff;
+	border-radius:15px 15px 2px 2px;	 
+    cursor: pointer;
+	 
+	}
+
+.urunbilgidiv img:hover{
+    opacity:0.7;
+  }  
+
+
+    
+   
+
+
+
+.urunbilgidiv #urun-resim:hover #ac::after{
+   
+     visibility:visible;
+    
+    
+   
+}
+/*transition: all .5s ease-in-out;
+#urun-resim:hover{
+	transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+	}*/	
+
+/*Urun baslıgı burada yer almkatadır.*/
+#urun-baslik{
+	color:#2F90B3;
+	font:22px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-align:center;
+	line-height:30px;
+	 }
+		
+	/*Urun bilgileri ici kullanılan css burada yer alır.*/
+#urun-bilgi{
+	width:200px;
+	height:50px;
+	margin-left:10px;
+	margin-top:15px;
+	text-align:center;
+	text-overflow:ellipsis;
+	}	
+	
+.urunkisabilgi{
+	color:#2D667B;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:50px;
+	font-weight:700;
+    
+    
+}	
+	
+/*Ürünü İncele butonu burada yer almakatadır*********************/
+
+.urun-incele{
+    display:block;
+    width:220px;
+    height:138px;
+    padding:100px 0 0 0;
+    background-color:rgba(23, 51, 163,0.3);    
+    color:white;
+    position:absolute;
+    cursor:pointer;  
+    text-align:center;
+    margin-bottom:-150px;
+    font:bold 22px "Trebuchet MS", Arial, Helvetica, sans-serif;
+   
+    border-radius:10px 10px 0 0;
+    box-shadow:1px 0 2px #5a5252;
+    opacity:0;
+    
+}	 	
+
+.urun-incele a{
+     display:block;
+    width:180px;
+    margin:0 auto;
+    height:35px;
+     text-decoration:none;
+     color:#fff;
+     padding:10px 0 0 0;
+     background-color:rgba(33, 87, 199,0.8);
+     border-radius:10px;
+    
+     
+}
+
+.urun-incele a:hover{
+     background-color:rgba(255, 255, 255, 0.90);
+     color:rgb(33, 87, 199);
+     transition:0.4s;
+}
+
+.urun-incele:hover{
+    opacity:1;
+    transition:0.3s;
+    transition-duration:1s
+}
+/*Ürünü İncele butonu burada yer almakatadır*********************/
+
+.button-buy{
+	display:block;
+	width:120px;
+	height:35px;
+	background-color:#0E61A5;
+	color:#fff;
+	font:bold 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	line-height:35px;
+	text-decoration:none;
+	border:2px solid #3482C0;
+	border-radius:4px;
+	margin:20px auto;
+	
+	}
+	
+.button-buy:hover{
+	background-color:#32B4E4;
+	transition:0.5s;
+	color:#00F}	
+
+	
+.urunbilgidiv{
+	width:220px;
+	height:386px;
+	background-color:#fff;
+	top:40px;
+	margin:0 20px 30px 20px;
+	bottom:40px;
+	left:85px;
+	position:relative;
+	float:left;
+	text-align:center;
+	border-radius:15px;
+	border:1px solid #DDD;
+	box-shadow:1px 5px 4px #2F90B3;
+   
+	
+	}	
+
+.urunbilgiresim{
+	display:block;
+	width:220px;
+	height:240px;
+	border-radius:15px 15px 3px 3px;}	
+	
+#urunlertext{
+	color:#F5F5F5;
+	font:46px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	line-height:120px;
+	letter-spacing:5px}	
+	
+#markalartext{
+	color:#2F90B3;
+	font:46px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	line-height:120px;
+	letter-spacing:5px;
+	}	
+
+.footer{
+	width:%100;
+    height:300px; 
+	background-image:url(images/cyan-wallpaper-4%20.jpg);
+	padding:15px;
+	text-align:center}
+	
+#sosyal-medya{
+	margin-left:-20px;
+	margin-bottom:10px;
+	}
+
+#sosyal-medya a{
+	text-decoration:none;}
+	
+#sosyal-medya #in:hover{
+	width:60px;
+	height:60px;
+	content:url(images/in-icon.png)}	
+	
+#sosyal-medya #facebook:hover{
+	width:60px;
+	height:60px;
+	content:url(images/facebook-icon.png)}	
+	
+#sosyal-medya #twitter:hover{
+	width:60px;
+	height:60px;
+	content:url(images/twitter-icon.png)}	
+	
+#sosyal-medya #google:hover{
+	width:60px;
+	height:60px;
+	content:url(images/google-icon.png)}				
+
+#sosyal-img-div{
+	width:60px;
+	height:60px;
+	}	
+	
+
+		
+#footer-ana{
+	width:870px;
+	height:auto;
+	margin:0 auto}	
+	
+	
+
+#footer-sol{
+	width:250px;
+	height:170px;
+	border:2px solid #B1C1CB;
+	margin:20px 40px 0 0;
+	float:left;
+	text-align:center;
+	box-shadow:1px 4px 4px #4F90B3;	}
+	
+#footer-baslik{
+	font:bold 24px Arial, Helvetica, sans-serif;
+	color:#C9E9FC;
+	line-height:50px;
+	}	
+#footer-tel{
+	font:16px Arial, Helvetica, sans-serif;
+	color:#88F7F1;}	
+#footer-sol p:hover{
+	opacity:0.8;
+	color:#fff}	
+	
+	
+#footer-orta{
+	width:250px;
+	height:170px;
+	border:2px solid #B1C1CB;
+	margin:20px 40px 0 0;
+	float:left;
+	text-align:center;
+	box-shadow:1px 4px 4px #4F90B3; }
+	
+#footer-sag{
+	width:250px;
+	height:170px;
+	border:2px solid #B1C1CB;
+	margin:20px 0;
+	float:left;
+	text-align:center;
+	box-shadow:1px 4px 4px #4F90B3; }
+	
+.hizlimenu{
+	color:#88F7F1; 
+    font-size:19px; 
+	text-decoration:none;
+	line-height:24px}
+	
+.hizlimenu:hover{
+	color:#0058B0}	
+	
+#footer-copyright{
+	width:%100;
+	height:30px;
+	background-color:#29252C;
+	text-align:center}
+	
+#copyright{
+	font:bold 10px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#CECECE;
+	line-height:30px;}	
+	
+.slider-down{
+	width:%100;
+	height:180px;
+	background-image:url(images/cyan-wallpaper-4%20.jpg);
+	 box-shadow:0 4px 10px #4F90B3;}
+	
+
+	
+#slider-down-circle-left{
+	width:180px;
+	height:160px;
+	border-radius:50px 0 50px 0;
+	background-color:#5BD2D9;
+	float:left;
+	margin:10px 40px 10px 180px;
+	text-align:center;
+	box-shadow:0 2px 3px #5BD2D9; }
+	
+#ilkutu{
+	font:bold 24px Arial, Helvetica, sans-serif;
+	color:#fff;	
+	
+	 }	
+	
+#slider-down-circle-orta{
+	width:180px;
+	height:160px;
+	border-radius:0 50px 0 50px;
+	background-color:#5BD2D9;
+	float:left;
+	margin:10px 40px 10px 0;
+	text-align:center;
+	box-shadow:0 2px 3px #5BD2D9;}	
+	
+#slider-down-circle-orta2{
+	width:180px;
+	height:160px;
+	border-radius:50px 0 50px 0;
+	background-color:#5BD2D9;
+	float:left;
+	margin:10px 40px 10px 0;
+	text-align:center;
+	box-shadow:0 2px 3px #5BD2D9;}	
+	
+#slider-down-circle-right{
+	width:180px;
+	height:160px;
+	border-radius:0 50px 0 50px;
+	background-color:#5BD2D9;
+	float:left;
+	margin-top:10px;
+	text-align:center;
+	box-shadow:0 2px 3px #5BD2D9;}	
+	
+.markadiv{
+	width:%100;
+	height:240px;	
+	padding:15px 0 15px 0;
+	}	
+	
+.markadivresim{
+	width:870px;
+	height:200px;
+	padding:5px 0 5px 0;
+	border-bottom:1px solid #2F90B3;
+	border-top:1px solid #2F90B3;
+	margin:0 auto}	
+	
+.markaresimkutu{
+	display:block;
+	width:200px;
+	height:200px;
+	float:left;
+	margin:0 auto;
+	margin-left:15px}
+
+.markarsmboyut{
+	width:200px;
+	height:200px;}	
+
+#markatextdiv{
+	width:%100;
+	height:120px;	
+	text-align:center;
+	line-height:120px}
+		
+	
+.kampanyadivtam{
+	width:%100;
+	height:640px;
+		}	
+	
+.kampanyadivortala{
+	width:1349px;
+	height:auto;
+    margin:0 auto;}
+	
+.kampdivbaslik{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:28px;
+	color:#2F90B3;
+	}	
+	
+.kampdivsoneklenen{
+	width:450px;
+	height:610px;
+	background-color:#fff;
+	float:left;
+	margin:0 auto;
+	text-align:center;
+	padding:30px 0 0 0;
+	
+	}	
+	
+.kampdivkampanyali{
+	width:450px;
+	height:610px;
+	background-color:#fff;
+	float:left;
+	margin:0 auto;
+	text-align:center;
+	padding:30px 0 0 0;
+	}
+	
+.kampdivrastgele{
+	width:449px;
+	height:610px;
+	background-color:#fff;
+	float:left;
+	margin:0 auto;
+	text-align:center;
+	padding:30px 0 0 0;
+	}					
+			
+.kampdivalan{
+	width:400px;
+	height:165px;
+	border:1px solid #2F90B3;
+	float:left;
+	margin:10px;
+	margin-left:20px;
+	box-shadow:0 2px 2px #2F90B3}
+
+/*Alt alanlardaki resimler bu kısım içersinde yapılmıştır.-------*/
+	
+.kampdivalanici{
+	display:block;
+	width:160px;
+	height:165px;
+	float:left;
+		
+	}	
+
+.kampdivalanici:hover{
+	width:160px;
+	height:165px;
+	opacity:0.9;
+	}
+
+/*Sonu.....................................................*/	
+.kampdiviciyazi{
+	width:220px;
+	height:165px;
+	float:left;	
+	margin-right:10px;
+	text-align:center;
+	line-height:60px}
+	
+.yildiz{
+	width:150px;
+	height:25px;
+	margin:10px auto;
+	}	
+	
+ins {
+	line-height:70px;
+	font-size:24px; 
+    text-decoration:none;
+}
+
+.hakkimizda{
+    width:%100;
+    height:450px;
+}
+
+.hakkimizda-ortala{
+    width:1100px;
+    height:auto;
+    margin:10px auto;
+}
+.hakkimizda-resim {
+    width:400px;
+    height:300px;
+    border:2px solid #0E61A5;
+    margin:60px 50px 10px 20px;
+    float:left;
+    box-shadow:0 2px 2px #2F90B3
+    
+}
+
+.hakkimizda-tanitim{
+    width:500px;
+    height:400px;
+    float:left;
+   
+    margin:30px 20px 10px 10px;
+    text-align:center;
+}
+
+.hakkimizda-baslik{
+    font:bold 24px Arial, Helvetica, sans-serif;
+    color:#2F90B3;
+}
+
+.hakkimizda-paragraf {
+    font: 18px Arial, Helvetica, sans-serif;
+    color:#55a7c3;
+
+}
+
+
+.vizyon-tanitim{
+    width:500px;
+    height:400px;
+    float:left;
+   
+    margin:60px 20px 10px 10px;
+    text-align:center;
+}
+
+.vizyon-paragraf {
+    font: 20px Arial, Helvetica, sans-serif;
+    color:#4aa3c2;
+
+}
+
+.vizyon-resim {
+    width:400px;
+    height:300px;
+    border:2px solid #0E61A5;
+    margin:60px 50px 10px 50px;
+    float:right;    
+    box-shadow:0 2px 2px #2F90B3
+    
+}
+
+.misyon-tanitim{
+    width:600px;
+    height:200px;
+    float:left;   
+    margin:100px 20px 10px 10px;
+    text-align:center;
+}
+
+
+.misyon-resim {
+    width:250px;
+    height:220px;
+    border:2px solid #0E61A5;
+    margin:60px 50px 10px 20px;
+    float:left;
+    box-shadow:0 2px 2px #2F90B3;
+    
+}
+
+.misyon-paragraf {
+    font: 22px Arial, Helvetica, sans-serif;
+    color:#4aa3c2;
+
+}
+
+.iletisim {
+     width:%100;
+    height:800px;
+}
+
+.iletisim-tam {
+    width:1300px;
+    height:auto;   
+    margin:20px auto;
+}
+
+.iletisim-map {
+    width:600px;
+    height:400px;
+    border:1px solid #2F90B3;
+    margin:10px;
+    float:left;
+    border-radius:5px;
+    box-shadow:0 2px 2px #2F90B3;
+}
+
+.iletisim-form {
+    width:550px;
+    height:625px;
+    margin:10px;
+    float:right;
+    border:1px solid #2F90B3;
+    border-radius:5px;
+    box-shadow:0 2px 2px #2F90B3;
+
+}
+
+.iletisim-adress {
+      width:600px;
+    height:200px;
+    border:1px solid #2F90B3;
+    margin:10px;
+    float:left;
+    border-radius:5px;
+    box-shadow:0 2px 2px #2F90B3;
+   
+   }
+
+/*Bu alanda yer alan bilgiler iletişim sayfası adres bilgileri için oluşturulmuştur*********************/
+#ilt-adres-baslik {
+    font:bold 20px Arial, Helvetica, sans-serif;  
+    color:#2f90b3; 
+    margin:10px 0 0 180px; 
+    line-height:40px; 
+    background-color:#ebf3f6; 
+    box-shadow:0 2px 2px #2f90b3  
+}
+
+#ilt-adres-p{
+    background-color:#ebf3f6; 
+    box-shadow:0 2px 2px #2f90b3
+}
+
+
+#ilt-adres-p1 {
+    font: bold 18px Arial, Helvetica, sans-serif;
+    color: #2f90b3;
+    margin: 10px 0 0 30px;
+}
+
+#ilt-adres-p2 {
+    font: 18px Arial, Helvetica, sans-serif;
+    color: #44b2d9;
+    margin: 10px 0 0 8px;
+}
+
+/*Bu alanda yer alan bilgiler iletişim sayfası adres bilgileri için oluşturulmuştur************burada bitmektedir*********/
+
+
+
+
+
+
+/*Bu kısım ürün bilgi sayfası için gerekli css bilgilerini içermektedir************Başlangıç*************/
+
+/*Ürün bilgileri görüntülemek için kullanılan css başlangıç kısımları*****************************/
+.urun-bilgi-tek{
+    width:1280px;
+    height:600px;
+    border-bottom:2px solid #2f90b3;
+    margin:30px 50px;
+     margin-bottom:50px;
+}
+
+.urun-bilgi-tek-resim-tam{
+    width:400px;
+    height:550px;
+    margin:10px;    
+    float:left;
+}
+
+.urun-bilgi-tek-resim{
+    width:230px;    
+    height:280px;
+    border:1px solid #2f90b3;
+    margin:10px auto;
+     box-shadow:0 2px 2px #2f90b3;
+
+  
+}
+
+
+
+
+.urun-bilgi-3-resim{
+    width:120px;
+    height:150px;
+    border:1px solid #2f90b3;
+    margin:25px 4px 0 4px;
+    float:left;
+    box-shadow:0 2px 2px #2f90b3;
+    
+
+}
+.urun-bilgi-tek-bilgi {
+    width:500px;
+    height:500px;
+    margin:30px 10px;    
+    float:left;
+}
+
+.urun-bilgi-tek-adi {
+    font:bold 26px Arial, Helvetica, sans-serif;
+    color:#2f90b3;
+    margin-left:30px;
+    margin-top:10px;
+    
+}
+
+.alt-cizgi{
+    border-bottom:1px solid #2f90b3;
+    width:400px;
+    margin:20px 0 20px 30px;
+    box-shadow:0 1px 1px #2f90b3;
+
+}
+.urun-bilgi-tek-fiyat {
+    font:bold 20px Arial, Helvetica, sans-serif;
+    margin-left:30px;
+    margin-top:30px;
+    height:40px;
+    color:#09191f;
+   
+}
+
+.urun-bilgi-tek-bilgialani{
+    font:bold 16px Arial, Helvetica, sans-serif;
+    color:#101517;
+    margin:20px 40px ;
+    width:400px;
+
+}
+
+.urun-bilgi-button-buy{
+	display:block;
+	width:120px;
+	height:35px;
+	background-color:#0E61A5;
+	color:#fff;
+	font:bold 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	line-height:35px;
+	text-decoration:none;	
+	border-radius:4px;
+    float:right;
+    margin-right:100px;
+    margin-top:-10px
+   
+	
+	
+	}
+	
+.urun-bilgi-button-buy:hover{
+	background-color:#4bb4db;
+    opacity:0.9;
+	transition:0.5s;
+	color:#d9f3f7}	
+/*Ürün bilgileri görüntülemek için kullanılan css başlangıç kısımları*****************************/
+
+
+/*benzer ürünleri görülen alan*/
+
+.benzerurun-tam{
+    width:780px;
+    height:310px;
+    margin-left:50px;
+    margin-bottom:70px;
+    margin-top:10px;
+    
+}
+
+.benzerurun-yazi{
+    font:bolder 36px  "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color:#2f90b3;
+    margin-left:150px;
+    box-shadow:4px 4px 4px #2f90b3;
+     margin-top:50px;
+    
+}
+
+.benzerurun-div{
+    width:214px;
+    height:305px;
+    margin:20px;
+    border:1px solid #2f90b3;
+    float:left;
+    background-color:#dce7ee;
+    border-radius:5px;
+    box-shadow:2px 3px 3px #2f90b3;
+
+}
+.benzerurun-div-resim {
+      width:200px;
+    height:210px;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:5px;
+    border:1px solid #2f90b3;
+    border-radius:3px;
+    box-shadow:0 1px 1px #2f90b3;
+}
+
+.benzerurun-div-isim{
+    font:bold 20px  "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color:#4F90B3;
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.button-konum{
+    width:100px;
+     margin-right:100px;
+    margin-top:10px;
+}
+.benzer-urun-fiyat{
+     font:bold 22px  "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color:#147dd0;
+    float:right;
+    margin-top:-30px;
+    margin-right:10px
+
+}
+
+.urunbilgi-kategori{
+       width:300px;
+       height:400px;
+       color:#1d4a62;
+       float:left;      
+       margin:10px;
+       margin-left:30px;
+       margin-top:40px;
+}
+
+/*Kategoriler için olan css bilgileri***************/
+.urunbilgi-kategori-yazi{
+      font:bold 22px  "Trebuchet MS", Arial, Helvetica, sans-serif;
+      color:#18507e;
+      margin:10px;
+      margin-left:90px;
+      
+}
+
+.urunbilgi-kategori-ici{
+     font:bold 18px  "Trebuchet MS", Arial, Helvetica, sans-serif;
+     color:#3b709c;
+     margin-left:10px;
+     
+}
+
+.urunbilgi-kategori a{
+    text-decoration:none;
+}
+
+
+.urunbilgi-kategori-ici:hover{
+    color:#63e3ea;
+}
+
+/*Bu kısım ürün bilgi sayfası için gerekli css bilgilerini içermektedir************Bitiş*************/
+
+
+
+
+
+/*üye olma formu işlemleri*******************/
+.uyeform-tam{
+    width:700px;
+    height:820px;
+    border:2px solid #2f90b3;
+    margin:20px auto;
+    background-color:#e4f0f8;
+    box-shadow:0 3px 3px #2f90b3;
+    border-radius:5px;
+}
+
+.uyeform-tablo   { 
+        font:bold 19px Arial, Helvetica, sans-serif; 
+        color:#2f90b3; 
+        margin-top:5px;        
+        width:700px; 
+        height:700px; 
+       
+    }
+
+.uyeform-tablo tr td{
+   
+}
+/*üye olma formu işlemleri*******************/
+
+
+/*Hesabım sayfası için gerekli css bilgileri burada yer almaktadır********/
+
+
+.hesabim{
+    width:600px;
+    min-height:600px;
+    margin:20px;  
+    margin-left:40px;  
+    float:left;
+    border:1px solid #2f90b3;
+    background-color:#e4f0f8;
+    border-radius:5px;
+     box-shadow:0 5px 5px #2f90b3;
+}
+
+.hesabim-baslik{
+    color:#3aa1c8;
+    font:bold 22px Arial, Helvetica, sans-serif; 
+    margin-left:200px;
+    line-height:40px;
+    box-shadow:0 4px 4px #2f90b3;
+}
+
+.hesabim-tablo{   
+        font:bold 19px Arial, Helvetica, sans-serif; 
+        color:#2f90b3; 
+        margin-top:5px;        
+        width:500px; 
+        height:500px;       
+    
+}
+
+.parola-buton{
+    display:block; 
+    width:200px;  
+    height:35px;
+    font:bold 18px Arial, Helvetica, sans-serif; 
+    background-color:#2f90b3; 
+    color:#fff; 
+    box-shadow:0 2px 2px #0E61A5;
+    text-decoration:none;
+    text-align:center;
+    line-height:35px;
+    border-radius:5px
+   
+}
+
+.vazgec-buton {
+    display: block;
+    width: 80px;
+    height: 35px;
+    font: 16px Arial, Helvetica, sans-serif;
+    background-color: #2f90b3;
+    color: #fff;
+    box-shadow: 0 2px 2px #0E61A5;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    float:right;
+    margin-right:60px
+}
+
+.hesabim-siparis{
+    width:500px;
+    min-height:220px;
+    background-color:#83e1e6;
+    margin:10px auto;
+    border-radius:5px;
+    box-shadow: 0 2px 2px #0E61A5;
+    text-align:left;  
+    margin-top:40px
+}
+
+.hesabim-siparis-eski{
+    width:420px;
+    height:80px; 
+    border:2px dashed #2f90b3;
+    background-color:#3ae518;
+    border-radius:10px;
+    font:bold 16px Arial, Helvetica, sans-serif; 
+    color:#174bd9;
+    margin:15px auto;
+    
+   
+
+
+}
+
+.hesabim-ic-daire{
+    float:right;
+    display:block;
+    width:45px; 
+    height:45px;    
+    color:white;
+    border-radius:45px;
+    text-align:center;
+    line-height:45px;
+    margin-top:17px;
+    margin-right:50px;
+    border:2px solid #fff;
+}
+/*Hesabım sayfası için gerekli css bilgileri burada bitmektedir********/
+
+
+
+/*Sepetim sayfası css kodları buradan başlamaktadır********************/
+
+
+.sepet-sayfa-tam{
+    width:1300px;
+    min-height:200px;
+    margin:20px auto;
+
+   
+
+}
+
+.sepet-sayfa{
+    width:700px;
+    min-height:120px;
+    margin:20px auto;
+   
+    border-radius:10px;
+    }
+
+.sepet-sayfa-resim{
+    width:110px;
+    height:110px;
+    border:1px solid #2f90b3;
+    float:left;
+    margin:5px;
+    border-radius:5px;
+    box-shadow:0 2px 2px #2f90b3;
+}
+.sepet-art{
+    width:560px;
+    height:110px;
+    float:left;
+    border-bottom:2px solid #2f90b3;
+    margin:5px;
+    background-color:rgba(147, 197, 213,0.3);
+    border-radius:5px;
+}
+
+.sepet-urunismi{
+     font:bold 20px Arial, Helvetica, sans-serif; 
+     color:#0f7dad;
+     margin-left:50px;
+     line-height:40px;
+}
+
+.sepet-sayfa-fiyat{
+   display:block; 
+   font:bold 18px Arial, Helvetica, sans-serif; 
+   text-align:center;
+   line-height:30px; 
+   min-width:65px; 
+   color:#2f90b3;
+   height:30px; 
+   border-radius:10px;
+   box-shadow:1px 2px 2px #2f90b3;
+   background-color:white; 
+   float:right; 
+   margin-right:135px; 
+   margin-top:-38px
+}
+
+.sepet-sayfa-toplam-fiyat{    
+    width:240px;    
+    height:100px;
+    margin:10px auto;    
+    border-radius:5px
+    
+
+}
+
+.sepet-sayfa-toplam-fiyatici{
+    width:240px;    
+    height:40px;
+    background:rgba(158, 218, 229,0.5);
+    font:18px Arial, Helvetica, sans-serif;
+    line-height:40px;
+    text-align:center;
+    color:#353434;
+    border-radius:5px
+    
+}
+
+#satinal:hover{
+    background-color:#edfaf9;
+    color:#2f90b3;
+}
+
+/*Sepetim sayfası css kodları burada bitmektedir.********************/
